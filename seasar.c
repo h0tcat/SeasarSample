@@ -10,7 +10,6 @@ void Encrypt(char* src,char* dst,int n){
 			src[i]+=n;
 		if(src[i]>'Z' && src[i]>'z')
 			src[i]-=26;
-			//src[i]=('a'-1)+(src[i]+n-(int)'z');
 	}
 	strcpy(dst,src);
 }
